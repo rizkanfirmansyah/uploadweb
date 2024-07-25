@@ -10,8 +10,8 @@ if (isset($_FILES['files'])) {
     $fileCount = count($_FILES['files']['name']);
     $allFilesValid = true;
 
-    print_r($_FILES);
-    die;
+    // print_r($_FILES);
+    // die;
 
     for ($i = 0; $i < $fileCount; $i++) {
         $fileTmpName = $_FILES['files']['tmp_name'][$i];
